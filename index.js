@@ -1,9 +1,6 @@
-module.exports = function(value, upper, precision=2){
-
-  let pct = (100.0 * value / upper) / 100;
-
-  pct = pct.toPrecision(precision);
-
-  return parseFloat( pct )
-
+module.exports = function (val, max, min=0){
+const range = Math.abs(max-min);
+const value = val - min;
+let percent = (100.0 * parseFloat(value) / parseFloat(range)) / 100;
+return  parseInt(percent * 100);
 }
