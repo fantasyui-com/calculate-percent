@@ -4,7 +4,7 @@
   "description": "Tiny easy to find percentage calculator.",
   "main": "index.js",
   "scripts": {
-    "pub": "git add .; git commit -m \"New Release\"; npm version patch; git push;",
+    "pub": "git add .; git commit -m \"New Release\"; npm version patch; git push; npm publish",
     "test": "node ./test.js"
   },
   "repository": {
